@@ -1,4 +1,4 @@
-# RoteLanguageLearner
+# RoteLanguageLearner (C# and SQL)
 Written by Gregory Greenfield. 18/11/22
 
 This program is a rote learning tool. It tests the user with their knowledge of German multiple times. It connects to a SQL database of German words, hosted on Docker. It was developed using VSCode on a Mac and Written in C# and SQL.
