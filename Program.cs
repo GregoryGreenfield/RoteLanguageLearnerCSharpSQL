@@ -2,7 +2,7 @@
 Written by Gregory Greenfield. 18/11/22
 gregorysgreenfield@gmail.com
 
-This program tests the user with predefined German words multiple times. The program revolves around the RoteNumber: 
+This program tests the user with pre-defined German words multiple times. The program revolves around the RoteNumber: 
     RoteNumber = 0 for newly added words
     RoteNumber++ if the user is correct
     RoteNumber-- if the user is not correct
