@@ -1,2 +1,2 @@
-* linguist-vendored
-*.js linguist-vendored=false
+bin/** linguist-vendored
+obj/** linguist-vendored

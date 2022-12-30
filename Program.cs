@@ -19,8 +19,8 @@ namespace CSharpSQLRoteWordLearner
         // Tests connection and return the entire database
         static List<List<string>> GetWholeDatabase(SqlConnection ConnectionString)
         {
-            List<List<string>> rowEntries = new List<List<string>>(); // List of col
-            List<string> columnEntries = new List<string>();
+            List<List<string>> rowEntries = new List<List<string>>(); // The strings being amalgamated into one 2d List.
+            List<string> columnEntries = new List<string>(); // The current cells in a row being read into a list.
 
             using (SqlConnection conn = ConnectionString)
             {
@@ -38,7 +38,7 @@ namespace CSharpSQLRoteWordLearner
                         {
                             using (SqlDataReader reader = comm.ExecuteReader())
                             {
-                                while (reader.Read())
+                                while (reader.Read()) // reading from [0,0] to the end. Add each cell to a row and then add it to 
                                 {
                                     columnEntries = new List<string>();
                                     columnEntries.Add(Convert.ToString(reader.GetSqlInt32(0)));
@@ -64,7 +64,7 @@ namespace CSharpSQLRoteWordLearner
             return rowEntries;
         }
 
-        // Updates the SQL database connection and return the entire database - need to write the code
+        // Updates the SQL database connection and return the entire database
         static void updateSQLDatabase(SqlConnection ConnectionString, string updatedDB)
         {
             using (SqlConnection conn = ConnectionString)
@@ -114,7 +114,7 @@ namespace CSharpSQLRoteWordLearner
             string roteValueStr;
             int roteValueInt;
 
-            // Test connection and returns the entire database in list form
+            // Tests connection and returns the entire database in list form
             List<List<string>> originalDB;
             originalDB = GetWholeDatabase(connectionGetDB);
 
