@@ -1,2 +1,4 @@
 bin/** linguist-vendored
 obj/** linguist-vendored
+*.sql linguist-detectable=true
+*.sql linguist-language=sql
